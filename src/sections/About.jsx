@@ -18,7 +18,7 @@ function About() {
         <h1>
           CREATIVE
           <br />
-          <em>THINKING.</em>
+          <em>THINKING</em>
         </h1>
       </motion.div>
 

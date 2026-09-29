@@ -153,14 +153,15 @@ function Hero() {
           }}
         >
 
-          <a
-            href="/contact"
-            className="hero-reference-primary"
-          >
-            Let's talk
-            <ArrowUpRight size={17} />
-          </a>
-
+         <a
+  href="https://wa.me/918056740325?text=Hi%20Bala%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+  target="_blank"
+  rel="noreferrer"
+  className="hero-reference-primary"
+>
+  Let's talk
+  <ArrowUpRight size={17} />
+</a>
           <a
   href="/resume.pdf"
   target="_blank"

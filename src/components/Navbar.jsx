@@ -46,6 +46,23 @@ function Navbar() {
     };
   }, []);
 
+  const openWhatsApp = () => {
+    const message =
+      "Hi Bala, I found your portfolio and would like to connect.";
+
+    const whatsappUrl = `https://wa.me/918056740325?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(
+      whatsappUrl,
+      "_blank",
+      "noopener,noreferrer"
+    );
+
+    setMenuOpen(false);
+  };
+
   const handleNavigation = (path) => {
     navigate(path);
     setMenuOpen(false);
@@ -58,6 +75,7 @@ function Navbar() {
 
   return (
     <>
+      {/* NAVBAR */}
       <header className="advanced-navbar">
         {/* BRAND */}
         <button
@@ -100,14 +118,16 @@ function Navbar() {
 
         {/* RIGHT SIDE */}
         <div className="advanced-nav-right">
+          {/* AVAILABILITY */}
           <div className="availability-mini">
             <span />
             AVAILABLE
           </div>
 
+          {/* WHATSAPP BUTTON */}
           <button
             className="nav-talk"
-            onClick={() => handleNavigation("/contact")}
+            onClick={openWhatsApp}
           >
             LET'S TALK
             <ArrowUpRight size={15} />
@@ -129,7 +149,7 @@ function Navbar() {
         </div>
       </header>
 
-      {/* SCROLL PROGRESS BAR */}
+      {/* SCROLL PROGRESS */}
       <div className="scroll-progress">
         <div
           className="scroll-progress-bar"
@@ -188,6 +208,27 @@ function Navbar() {
               </NavLink>
             </motion.div>
           ))}
+
+          {/* MOBILE WHATSAPP */}
+          <motion.button
+            className="mobile-whatsapp-button"
+            onClick={openWhatsApp}
+            initial={{
+              opacity: 0,
+              x: -15,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{
+              delay: pages.length * 0.04,
+              duration: 0.25,
+            }}
+          >
+            LET'S TALK
+            <ArrowUpRight size={17} />
+          </motion.button>
         </motion.div>
       )}
     </>
