@@ -11948,3 +11948,161 @@ section.contact .contact-footer span:nth-child(2) {
     display: none !important;
   }
 }
+/* =========================================================
+   HERO — MOBILE HEADING RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .hero-reference-content h1 {
+    font-size: clamp(36px, 9.5vw, 52px) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.04em !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+}
+/* =========================================================
+   HERO — RESPONSIVE HEIGHT FIX
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .hero-reference {
+    height: auto !important;
+    min-height: auto !important;
+  }
+}
+/* =========================================================
+   HERO TECH STRIP — MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .hero-reference-tech {
+    height: 52px;
+    padding: 0 6%;
+    gap: 28px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .hero-reference-tech::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-reference-tech span {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 9px;
+  }
+}
+/* =========================================================
+   HERO VISUAL — MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .hero-reference-visual {
+    width: 100%;
+    height: clamp(340px, 95vw, 430px);
+    margin-top: 16px;
+    overflow: hidden;
+  }
+
+  .hero-reference-visual img {
+    width: min(100%, 390px);
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+  }
+
+  .hero-reference-ring {
+    width: min(76vw, 290px);
+    height: min(76vw, 290px);
+    border-width: clamp(10px, 2.8vw, 12px);
+  }
+
+  .hero-decor {
+    font-size: clamp(40px, 12vw, 50px);
+  }
+
+  .hero-decor-left {
+    left: 0;
+    top: 20%;
+  }
+
+  .hero-decor-right {
+    right: 0;
+    bottom: 18%;
+  }
+}
+/* =========================================================
+   HERO CONTENT — MOBILE SPACING
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .hero-reference-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero-reference-content h1 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 18px;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .hero-reference-content p {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+    line-height: 1.65;
+  }
+
+  .hero-reference-actions {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-reference-actions a,
+  .hero-reference-actions button {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+/* =========================================================
+   HERO TITLE — DESKTOP FIT
+   ========================================================= */
+
+@media (min-width: 1001px) {
+  .hero-reference-content h1 {
+    font-size: clamp(54px, 4.4vw, 72px) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.045em !important;
+    max-width: 850px;
+  }
+}
+/* =========================================================
+   HERO TITLE — DESKTOP FINAL FIT
+   ========================================================= */
+
+@media (min-width: 1001px) {
+  .hero-reference-content {
+    max-width: 900px;
+  }
+
+  .hero-reference-content h1 {
+    font-size: clamp(52px, 3.9vw, 64px) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.045em !important;
+    max-width: 900px !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+}

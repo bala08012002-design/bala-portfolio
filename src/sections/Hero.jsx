@@ -108,9 +108,9 @@ function Hero() {
           initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
         >
-          <AnimatedText text="UI/UX DESIGNER" />
+          <AnimatedText text="FULL-STACK DEVELOPER" />
           <br />
-          <AnimatedText text="& WEB DEVELOPER" />
+          <AnimatedText text="& AI ENGINEER" />
         </motion.h1>
 
         {/* DESCRIPTION */}
@@ -290,12 +290,12 @@ function Hero() {
       >
 
         {[
-          "HTML",
-          "CSS",
-          "JAVASCRIPT",
+          "PYTHON",
           "REACT.JS",
-          "PHP",
-          "MYSQL",
+          "DJANGO",
+          "SQL",
+          "AI/ML",
+          "GIT",
           "FIGMA",
         ].map((tech, index) => (
           <motion.span
